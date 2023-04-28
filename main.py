@@ -15,21 +15,7 @@ def random_passwords():
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-    # random_password = []
-    #
-    # for letter in range(1, randint(3, 9)):
-    #     random_password.append(letters[randint(0, 51)])
-    #
-    # for number in range(1, randint(3, 9)):
-    #     random_password.append(numbers[randint(0, 9)])
-    #
-    # for symbol in range(1, randint(3, 9)):
-    #     random_password.append(symbols[randint(0, 8)])
-    #
-    # shuffle(random_password)
-    # new_random = ''.join(random_password)
-    # entry_password.delete(0, END)
-    # entry_password.insert(0, new_random)
+
 
     password_letters = [choice(letters) for _ in range(randint(8, 10))]
     password_symbols = [choice(symbols) for _ in range(randint(2, 4))]
